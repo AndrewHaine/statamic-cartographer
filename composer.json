@@ -1,0 +1,31 @@
+{
+    "name": "andrewhaine/statamic-cartographer",
+    "autoload": {
+        "psr-4": {
+            "AndrewHaine\\StatamicCartographer\\": "src"
+        }
+    },
+    "extra": {
+        "statamic": {
+            "name": "Statamic Cartographer",
+            "description": "Add map and geospatial data to your content with ease using a drag and drop interface."
+        },
+        "laravel": {
+            "providers": [
+                "AndrewHaine\\StatamicCartographer\\ServiceProvider"
+            ]
+        }
+    },
+    "require": {
+        "php": "^8.1",
+        "statamic/cms": "^3.3"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^7.5"
+    },
+    "config": {
+        "allow-plugins": {
+            "pixelfear/composer-dist-plugin": true
+        }
+    }
+}
